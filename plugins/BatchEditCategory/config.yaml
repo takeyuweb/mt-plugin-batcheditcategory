@@ -1,0 +1,13 @@
+id: BatchEditCategory
+name: Batch Edit Category
+key: batcheditcategory
+version: 0.0.1
+author_name: Yuichi Takeuchi
+author_link: http://takeyu-web.com/
+description: <__trans phrase="_PLUGIN_DESCRIPTION">
+l10n_class: BatchEditCategory::L10N
+
+callbacks:
+    MT::App::CMS::template_source.edit_entry_batch: $batcheditcategory::BatchEditCategory::Plugin::_cb_ts_edit_entry_batch
+    MT::App::CMS::template_param.edit_entry_batch: $batcheditcategory::BatchEditCategory::Plugin::_cb_tp_edit_entry_batch
+    MT::App::CMS::cms_post_bulk_save.entries: $batcheditcategory::BatchEditCategory::Plugin::_cb_post_bulk_save_entries

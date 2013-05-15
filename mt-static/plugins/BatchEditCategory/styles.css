@@ -1,0 +1,6 @@
+.col.category .category_label {
+    padding: 0px 3px;
+}
+.col.category .category_label.is_primary {
+    background-color: #CCCCFF;
+}
